@@ -50,8 +50,8 @@ function App() {
         </div>
       </div>
       <div className='servicios' id='servicios'>
-        <p style={{color: "rgb(158, 135, 0)", fontSize: "24px", margin: "0px"}}><b>SERVICIOS</b></p>
-        <h2 style={{fontSize: "36px", margin: "0px"}}>Nuestras Áreas de Conocimiento</h2>
+        <p style={{ color: "rgb(158, 135, 0)", fontSize: "24px", margin: "0px" }}><b>SERVICIOS</b></p>
+        <h2 style={{ fontSize: "36px", margin: "0px" }}>Nuestras Áreas de Conocimiento</h2>
         <div className='servicios-cards-container'>
           <div className="legal-card">
             <img src={s1} alt="" />
@@ -114,40 +114,51 @@ function App() {
         </div>
         <button>MÁS SERVICIOS</button>
       </div>
-      <div className='footer'>
-        <div>
-          <div>logo</div>
-          <p>Nos enfocamos en brindar servicios jurídicos, impulsando el crecimiento y aspiraciones a futuro.</p>
-          <ul>
-            <li>ig</li>
-            <li>in</li>
-            <li>tiktok</li>
-          </ul>
+
+      <div className="footer">
+        <div className="footer-column">
+          <div className="footer-logo">
+            <img src={logoNoB} alt="" />
+          </div>
+          <p>
+            Nos enfocamos en brindar servicios jurídicos, impulsando el crecimiento y
+            aspiraciones a futuro.
+          </p>
+          {/* <ul className="footer-social">
+            <li>📸</li>
+            <li>💼</li>
+            <li>🎵</li>
+          </ul> */}
         </div>
-        <div>
+
+        <div className="footer-column">
           <h3>Áreas de Servicios</h3>
-          <ul>
-            <li>Derecho Constitucional y Procesal Constitucional</li>
-            <li>Derecho Penal y Procesal Penal</li>
-            <li>Derecho Penal Económico</li>
-            <li>Métodos Alternativos de Solución de Conflictos</li>
-            <li>Derecho Laboral</li>
-            <li>Derecho Civil</li>
-            <li>Derecho Societario</li>
-            <li>Derecho Electoral</li>
-            <li>Derecho Administrativo</li>
+          <ul className="footer-links">
+            <li><a href="#">Derecho Constitucional y Procesal Constitucional</a></li>
+            <li><a href="#">Derecho Penal y Procesal Penal</a></li>
+            <li><a href="#">Derecho Penal Económico</a></li>
+            <li><a href="#">Métodos Alternativos de Solución de Conflictos</a></li>
+            <li><a href="#">Derecho Laboral</a></li>
+            <li><a href="#">Derecho Civil</a></li>
+            <li><a href="#">Derecho Societario</a></li>
+            <li><a href="#">Derecho Electoral</a></li>
+            <li><a href="#">Derecho Administrativo</a></li>
           </ul>
         </div>
-        <div>
+
+        <div className="footer-column">
           <h3>Contactos</h3>
           <h4>Dirección</h4>
-          <p>Pedro Ponce Carrasco E8-06
-            y Av. Diego de Almagro
-            Edificio Almagro Plaza Of.1205</p>
+          <p>
+            Pedro Ponce Carrasco E8-06<br />
+            y Av. Diego de Almagro<br />
+            Edificio Almagro Plaza Of.1205
+          </p>
           <h4>Teléfono</h4>
-          <p>(+593)98 499 1357</p>
+          <p>(+593) 98 499 1357</p>
         </div>
       </div>
+
     </>
   )
 }
