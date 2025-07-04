@@ -1,9 +1,13 @@
 import './App.css'
-import logo from './assets/logo.jpg'
-import logoNoB from './assets/logoSinFondo.png'
+// import logo from './assets/logo.jpg'
+import logoNoB from './assets/Logo2.png'
 import checkIcon from './assets/icons/check.svg'
+import lawIcon from './assets/icons/law.svg'
+import peopleIcon from './assets/icons/people.svg'
+import policeIcon from './assets/icons/police.svg'
 import Carrusel from './components/Carrusel'
-import mariagabriela from './assets/MariaGabriela.webp'
+// import mariagabriela from './assets/MariaGabriela.webp'
+import dyk from './assets/dyk.jpg'
 import s1 from './assets/s1.webp'
 import s2 from './assets/s2.webp'
 import s3 from './assets/s3.webp'
@@ -13,7 +17,7 @@ function App() {
   return (
     <>
       <div className='header'>
-        <img src={logo} alt="" />
+        <img src={logoNoB} alt="" />
         <ul>
           <a href='#'>Home</a>
           <a href='#servicios'>Servicios</a>
@@ -35,9 +39,11 @@ function App() {
             Acerca de nosotros
           </p>
           <h2 style={{ textAlign: "start", fontWeight: "bold" }}>Nuestro propósito y compromiso</h2>
-          <p style={{ textAlign: "justify", margin: "0px" }}><span>El propósito y el compromiso de <b>LEX ITINERE</b> es asesorar y patrocinar disruptivamente a sus clientes para la resolución de conflictos y litigios complejos en el marco de un mundo globalizado, utilizando estrategias interdisciplinarias apegadas a la ética y al cumplimiento normativo.</span><br /><b>LEX ITINERE</b> se enfoca en brindar servicios jurídicos que se alejan permanentemente de la forma tradicional de ejercer la profesión, impulsando el crecimiento de sus clientes en sus metas y aspiraciones a futuro. <b>LEX ITINERE</b> busca convertirse en el asesor de confianza y aliado de sus clientes y cruzar fronteras.</p>
+          <p style={{ textAlign: "justify", margin: "0px" }}>En Firma <b>D&K Legal</b>, nos comprometemos a brindar asesoramiento jurídico de alta calidad y personalizado a nuestros clientes, protegiendo sus derechos y libertades con integridad y ética. Estamos dedicadas a establecer relaciones duraderas con nuestros clientes basadas en la confianza y el respeto, y a trabajar incansablemente para lograr resultados justos y satisfactorios. <br /><br />Nuestro compromiso es trabajar con pasión y dedicación para defender los intereses de nuestros clientes y contribuir a la justicia y la equidad en la sociedad. Con la experiencia y conocimiento de nuestras fundadoras, <b>Doménica y Katherine</b>, nos esforzamos por brindar soluciones legales efectivas y personalizadas que se adapten a las necesidades y objetivos de cada cliente.</p>
         </div>
-        <img src={mariagabriela} alt="" style={{ width: "350px", height: "450px", alignSelf: "center" }} />
+        <div className="dyk-photo">
+          <img src={dyk} alt="" />
+        </div>
       </div>
       <div className='post-nosotros' id='contacto'>
         <div className="post-nosotros-img">
@@ -46,18 +52,22 @@ function App() {
         </div>
         <div className='post-nosotros-text'>
           <h3>Accede a una asesoría legal y resuelve tus dudas con nuestros abogados especializados.</h3>
-          <button>AGENDA UNA ASESORÍA AQUÍ</button>
+          <button>
+            <a href='https://wa.link/cb5agw' target="_blank" rel="noopener noreferrer">AGENDA UNA ASESORÍA AQUÍ</a>
+          </button>
         </div>
       </div>
       <div className='servicios' id='servicios'>
         <p style={{ color: "rgb(158, 135, 0)", fontSize: "24px", margin: "0px" }}><b>SERVICIOS</b></p>
-        <h2 style={{ fontSize: "36px", margin: "0px" }}>Nuestras Áreas de Conocimiento</h2>
+        <h2 style={{ fontSize: "36px", margin: "0px", textAlign: "center" }}>Nuestras Áreas de Conocimiento</h2>
         <div className='servicios-cards-container'>
           <div className="legal-card">
             <img src={s1} alt="" />
             {/* Encabezado con íconos simulados */}
             <div className="legal-card-header">
-              <div className="icon law-icon">LAW</div>
+              <div className='icon-image'>
+                <img src={lawIcon} alt="" />
+              </div>
               <div className="icon check-icon">✔</div>
             </div>
 
@@ -78,7 +88,9 @@ function App() {
             <img src={s2} alt="" />
             {/* Encabezado con íconos simulados */}
             <div className="legal-card-header">
-              <div className="icon law-icon">LAW</div>
+              <div className='icon-image'>
+                <img src={policeIcon} alt="" />
+              </div>
               <div className="icon check-icon">✔</div>
             </div>
 
@@ -98,7 +110,9 @@ function App() {
           <div className="legal-card">
             <img src={s3} alt="" />
             <div className="legal-card-header">
-              <div className="icon law-icon">LAW</div>
+              <div className='icon-image'>
+                <img src={peopleIcon} alt="" />
+              </div>
               <div className="icon check-icon">✔</div>
             </div>
 
@@ -112,7 +126,6 @@ function App() {
           </div>
 
         </div>
-        <button>MÁS SERVICIOS</button>
       </div>
 
       <div className="footer">
@@ -124,11 +137,6 @@ function App() {
             Nos enfocamos en brindar servicios jurídicos, impulsando el crecimiento y
             aspiraciones a futuro.
           </p>
-          {/* <ul className="footer-social">
-            <li>📸</li>
-            <li>💼</li>
-            <li>🎵</li>
-          </ul> */}
         </div>
 
         <div className="footer-column">
@@ -147,15 +155,9 @@ function App() {
         </div>
 
         <div className="footer-column">
-          <h3>Contactos</h3>
-          <h4>Dirección</h4>
-          <p>
-            Pedro Ponce Carrasco E8-06<br />
-            y Av. Diego de Almagro<br />
-            Edificio Almagro Plaza Of.1205
-          </p>
+          <h3>Contacto</h3>
           <h4>Teléfono</h4>
-          <p>(+593) 98 499 1357</p>
+          <p>(+593) 098 761 9953</p>
         </div>
       </div>
 

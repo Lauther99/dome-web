@@ -79,10 +79,11 @@ li{
   align-items: center;
   justify-content: space-evenly;
   height: 100px;
+  background-color: #e5e5e5;
 }
 
 .header img{
-  height: 60px;
+  height: 80px;
 }
 
 .header ul{
@@ -128,6 +129,7 @@ li{
 
 .carrusel-item img{
   width: 100%;
+  height: 100%;
   object-fit: cover;
   position: absolute;
   z-index: -1;
@@ -213,7 +215,8 @@ li{
 }
 
 .post-nosotros-img img{
-  width: 150px;
+  width: 350px;
+  height: 130px;
 }
 
 .post-nosotros-text{
@@ -274,7 +277,6 @@ li{
 }
 
 .legal-card {
-  background-color: #fff;
   padding: 1.5rem;
   border-radius: 0.75rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -282,12 +284,19 @@ li{
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
+}
+
+.legal-card img{
+  width: 260px;
+  align-self: top;
 }
 
 .legal-card-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 260px;
   align-items: center;
 }
 
@@ -313,6 +322,7 @@ li{
   font-size: 1rem;
   color: #111;
   margin: 0;
+  text-align: center;
 }
 
 .legal-card-list {
@@ -422,6 +432,26 @@ li{
   margin: 0;
 }
 
+.dyk-photo{
+    width: 450px;
+    height: 350px;
+}
+
+.dyk-photo img{
+  width: 100%;
+  height: 100%;
+}
+
+.icon-image{
+  width: 40px;
+  height: 40px;
+}
+
+.icon-image img{
+  width: 100%;
+  height: 100%;
+}
+
 
 @media (width <= 900px){
   .nosotros{
@@ -456,10 +486,18 @@ li{
     font-size: 36px;
   }
 
+  .dyk-photo{
+    width: 100%;
+  }
+
 }
 
 @media (width <= 500px){
   .carrusel-item h2{
     font-size: 26px;
+  }
+
+  .header ul{
+    display: none;
   }
 }
