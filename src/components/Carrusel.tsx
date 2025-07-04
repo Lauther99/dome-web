@@ -5,14 +5,18 @@ import img3 from '../assets/img3.webp'
 
 interface CarruselContent {
     img: string,
-    title: string
+    title: any
 }
 
 const Carrusel = () => {
     const carruselItems: CarruselContent[] = [
         {
             img: img1,
-            title: "Derecho Constitucional y Procesal Constitucional"
+            title: (
+                <>
+                    Derecho Constitucional <br /> y Procesal Constitucional
+                </>
+            )
         },
         {
             img: img2,
@@ -20,7 +24,11 @@ const Carrusel = () => {
         },
         {
             img: img3,
-            title: "Derecho Penal y Procesal Penal"
+            title: (
+                <>
+                    Derecho Penal <br /> y Procesal Penal
+                </>
+            )
         }
     ];
     const [indice, setIndice] = useState(0);

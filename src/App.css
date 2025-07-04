@@ -1,9 +1,16 @@
 #root {
-  width: 95vw;
+  /* width: 95vw;
   max-width: 1280px;
-  margin: 0 auto;
+  
   padding: .5rem;
-  text-align: center;
+  text-align: center; */
+  overflow-x: hidden;
+  margin: 0 auto;
+  width: 100vw;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .logo {
